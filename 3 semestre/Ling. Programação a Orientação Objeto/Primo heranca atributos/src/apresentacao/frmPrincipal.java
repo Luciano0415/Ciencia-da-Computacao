@@ -79,10 +79,10 @@ public class frmPrincipal extends javax.swing.JDialog
     private void btnVerificaPrimoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnVerificaPrimoActionPerformed
     {//GEN-HEADEREND:event_btnVerificaPrimoActionPerformed
         modelo.Controle controle = new modelo.Controle(txfNumero.getText());
-        if (controle.getMensagem().equals(""))
-            lblResposta.setText(controle.getResposta());
+        if (controle.mensagem.equals(""))
+            lblResposta.setText(controle.resposta);
         else
-            lblResposta.setText(controle.getMensagem());
+            lblResposta.setText(controle.mensagem);
     }//GEN-LAST:event_btnVerificaPrimoActionPerformed
 
     /**

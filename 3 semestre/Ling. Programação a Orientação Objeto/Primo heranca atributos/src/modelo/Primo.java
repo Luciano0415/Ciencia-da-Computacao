@@ -1,11 +1,7 @@
 package modelo;
 
-public class Primo
+public final class Primo extends AbsPropriedades
 {
-
-    private int num;
-    private String resposta;
-
     public Primo(int num)
     {
         this.num = num;
@@ -28,11 +24,6 @@ public class Primo
                 break;
             }
         }
-    }
-
-    public String getResposta()
-    {
-        return resposta;
     }
 
 }

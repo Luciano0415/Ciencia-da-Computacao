@@ -1,8 +1,8 @@
-package primo;
+package triangulos;
 
 import apresentacao.frmPrincipal;
 
-public class Primo
+public class Triangulos
 {
     public static void main(String[] args)
     {
