@@ -1,0 +1,110 @@
+select * from produtos
+select top 2 * from produtor (selecionar somente os 2 primeiros)
+
+where valor_saida < valor_ent
+
+where valor_ent between 20000
+adn 30000
+order by fabricante
+--------------------------------------------------------------------------------------------------
+
+select distinct(UPPER(fabricantes))      "distinct" não pega somente um nome, nao repeti
+from produtos
+order by fabricante 		"dá erro! por que nao tem nenhum nome de campo/coluna fabricante"
+
+select distinct(UPPER(fabricantes))    
+as resposta from produtos
+order by resposta
+
+select distinct(vendedores)    
+as resposta from produtos
+order by resposta
+--------------------------------------------------------------------------------------------------
+
+select tipo ou fabricante, avg(valor_ent)
+as media from produtos
+group by tipo ou fabricante
+order by fabricante
+
+
+select count(*) from produtos
+where tipo = 'moto'
+ou group by tipo
+
+select tipo, count(*) from produtos
+group by tipo
+
+
+select count(*) as total
+from produtos 
+where tipo = 'carro'
+and data_saida between
+'20120201' and '20120329'
+--------------------------------------------------------------------------------------------------
+
+select sum(valor_ent) as total
+from produtos
+where tipo = 'carro'
+
+select tipo, sum(valor_ent) as total
+from produtos
+group by tipo
+
+--------------------------------------------------------------------------------------------------
+select sum(valor_saida - valor_ent)
+as total
+from produtos
+
+select tipo,
+sum(valor_saida - valor_ent)
+as total
+from produtos
+where data_saida between
+'20120201' and '20120329'
+group by tipo
+
+update produtos 
+set valor_ent = 24000
+where modelo = 'ecosport'
+
+select 
+sum(valor_ent) as entrada,
+sum(valor_saida) as saida
+from produtos
+--------------------------------------------------------------------------------------------------
+select sum(valor_saida - valor_ent)
+from produtos
+where vendedor like 'joa%'
+
+select vendedor,
+sum(valor_saida - valor_ent) as total
+from produtos
+where vendedor like 'joa%'
+
+select vendedor,
+sum(valor_saida - valor_ent) as total
+from produtos
+group by total desc
+--------------------------------------------------------------------------------------------------
+select vendedor, total, (total * 0.05) as salario from 
+(select vendedor,
+sum(valor_saida - valor_ent) as total
+from produtos
+group by vendedor) as a
+
+select top 1 vendedor, total, (total * 0.05) as salario from 
+(select vendedor,
+sum(valor_saida - valor_ent) as total
+from produtos
+group by vendedor) as a
+order by total desc
+--------------------------------------------------------------------------------------------------
+select datediff(day, data_ent, data_saida) as dias
+from produtos
+order by dias desc
+
+select modelo, loja, vendedor,
+datediff(day, data_ent, data_saida) as dias
+from produtos
+order by dias desc
+--------------------------------------------------------------------------------------------------
