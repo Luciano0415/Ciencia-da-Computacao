@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --cor0: #fff;
+    --cor1: #024959;
+    --cor2: #AEF2CC;
+    --cor3: #D0F2D5;
+    --cor4: #A4D932;
+    --cor5: #F2F2F2;
+    --cor6: #000;
+    --cor7: #D9D9D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-login {
+    background-color: var(--cor5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor0);
+    box-shadow: 20px 20px 700px #bebebe, -20px -20px 70px #ffffff;
+    z-index: 0;
+}
+
+/* login */
+
+#login-right {
+    background-color: var(--cor2);
+    border-radius: 20px 20px 20px 20px;
+    width: 25%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    z-index: 2;
+}
+
+.icon-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.fa-arrow-left {
+    font-size: 24px;
+    color: var(--cor0);
+}
+
+/* Bem vindo de volta começo */
+
+#logo-integra {
+    position: absolute;
+    width: 180px;
+    top: 30px;
+
+}
+
+.title-account {
+    position: absolute;
+    top: 50px;
+}
+
+#login-left {
+    position: relative;
+    left: -25px;
+    z-index: 1;
+    background-color: var(--cor0);
+    border-radius: 0 20px 20px 0;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+#login-left>h1 {
+    color: var(--cor1);
+}
+
+
+/* Bem vindo de volta fim */
+
+#icones-bike {
+    width: 140px;
+}
+
+.box {
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: var(--cor2);
+    border-radius: 500px;
+    width: 30vw;
+    color: var(--cor6);
+    margin: 3%;
+}
+
+input {
+    border: none;
+    color: var(--cor0);
+    background-color: var(--cor2);
+    height: auto;
+    width: auto;
+    font-size: medium;
+}
+
+input::placeholder {
+    color: var(--cor0);
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    background-color: var(--cor2);
+}
+
+#user {
+    padding: 5px;
+}
+
+#envelope {
+    padding: 5px;
+}
+
+#lock {
+    padding: 5px;
+}
+
+.btns {
+    background-color: var(--cor2);
+    color: #fff;
+    border: none;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btns:hover {
+    background: linear-gradient(40deg,rgba(164, 217, 50, 1) 0%, rgba(121, 163, 32, 1) 100%);
+    filter: drop-shadow(0 0 0.4em rgb(16.4, 217, 50, 1))
+}
+
+.btn-entrar {
+    border: 2px solid #fff;
+    width: 97px;
+    height: 40px;
+    position: relative;
+    top: 40px;
+}
+
+.btn-cadastrar {
+    position: relative;
+    width: 186px;
+    height: 40px;
+    top: 10px
+}
+
+/* Responsivo */
+
+@media screen and (max-width:520px) {
+    #login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #login-left {
+        width: 80vw;
+        height: 50vh;
+        position: relative;
+        top: -30px;
+        left: auto;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .box {
+        width: 100%;
+        height: 5%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    #login-right {
+        width: 80vw;
+        height: 40vh;
+        gap: 25px;
+    }
+
+    h1 {
+        width: 90vw;
+        text-align: center;
+    }
+
+
+}

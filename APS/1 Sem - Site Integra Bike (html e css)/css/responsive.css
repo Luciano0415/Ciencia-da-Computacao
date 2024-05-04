@@ -1,0 +1,285 @@
+/* tela responsiva */
+
+
+/* responsive 770px */
+@media screen and (max-width:770px) {
+
+    /* PRINCIPAL */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-texto {
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*FIM PRINCIPAL */
+
+    /* SOBRE */
+    #sobre {
+        flex-direction: column;
+        align-items: center;
+        gap: px;
+    }
+
+    .img-inicio {
+        width: 450px;
+        margin: auto;
+    }
+
+    /* FIM SOBRE */
+
+    /* BENEFICIOS */
+    .container-beneficios {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    /* FIM BENEFICIOS */
+
+    /*SAUDE E MEIO AMBIENTE */
+    #section-saude {
+        height: 80vh;
+    }
+
+    .saude-meio-texto {
+        padding: 25px;
+    }
+
+    .img-saude-meio {
+        height: 80vh;
+    }
+
+
+    /* FIM SAUDE E MEIO AMBIENTE */
+
+
+    /* DESENVOLVIMENTO SUSTENTAVEL */
+    #section-desenvolvimento {
+        height: 90vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desenvolvimento-sustentavel {
+        padding: 15px 25px;
+    }
+
+    .img-desenvolvimento-sustentavel {
+        height: 40vh;
+
+    }
+
+    /* FIM DESENVOLVIMENTO SUSTENTAVEL *
+
+    /* IMPACTO */
+    #section-impacto {
+        height: 55vh;
+        align-items: center;
+        padding: 12px 0;
+    }
+
+    .impacto-texto {
+        height: 40vh;
+        padding: 25px;
+    }
+
+    .img-impacto {
+        height: 55vh;
+        width: 50vw;
+        position: relative;
+        top: 2px;
+    }
+
+}
+
+/* FIM IMPACTO */
+
+/* fim responsive 770px */
+
+/* responsive 520px */
+@media screen and (max-width:520px) {
+    header {
+        display: flex;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .img-logo {
+        width: 60%;
+    }
+
+
+    .box-nav {
+        display: none;
+    }
+
+    #burguer {
+        display: inline;
+        padding: 5px;
+    }
+
+    /* MENU RESPONSIVO */
+
+    /* FIM RESPONSIVO MENU */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .img-sobre {
+        z-index: 0;
+    }
+
+    .box-texto {
+        margin: 0;
+        width: 90vw;
+    }
+
+    .box-texto>a {
+        position: relative;
+        top: 50px;
+        margin: auto;
+    }
+
+    .container h1 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+        top: -70px;
+    }
+
+    .txt-sobre {
+        width: 100%;
+        margin: auto;
+        gap: 10px;
+    }
+
+    .img-sobre {
+        position: relative;
+    }
+
+    .bike-integra {
+        width: 90%;
+        align-items: center;
+        margin: auto;
+    }
+
+    #beneficios {
+        padding: 20px 10px;
+    }
+
+    .container-beneficios {
+        justify-content: center;
+    }
+
+    .card-beneficios {
+        width: 250px;
+    }
+
+
+    #section-saude {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--cor2);
+        margin-bottom: 5%;
+        height: 100%;
+        padding: 25px;
+    }
+
+    .saude-meio-texto {
+        margin: 0;
+        padding: 25px;
+    }
+
+    .imagem-saude-meio-ambiente {
+        margin: auto;
+        height: 40vh;
+    }
+
+    .img-saude-meio {
+        height: 40vh;
+    }
+
+    #section-desenvolvimento {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 25px;
+    }
+
+    .desenvolvimento-sustentavel {
+        padding: 25px;
+    }
+
+    .imagem-desenvolvimento {
+        margin: auto;
+    }
+
+
+    .img-desenvolvimento-sustentavel {
+        margin: auto;
+        height: 30vh;
+        width: 80vw;
+    }
+
+    #section-impacto {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 25px;
+    }
+
+    .impacto-texto {
+        padding: 0;
+        width: 70vw;
+        height: auto;
+    }
+
+    #impacto-list li {
+        width: 100%;
+    }
+
+    .item-impacto {
+        width: 100%;
+    }
+
+    .img-impacto {
+        margin: auto;
+        height: 30vh;
+        width: 80vw;
+    }
+
+
+    .container-passos {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .passos-cadastro {
+        height: 20vh;
+    }
+
+    footer {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* fim responsive 520px */
