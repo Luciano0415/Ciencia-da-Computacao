@@ -1,7 +1,7 @@
 # Ciencia da Computacao
  *Exercicios e projetos feitos no curso de ciência da computação*
 
-**Progresso do curso** \
+**Progresso do curso** 
 
  1º e 2º semestre: completo (2023) \
  3º e 4º semestre: cursando (2024) \
