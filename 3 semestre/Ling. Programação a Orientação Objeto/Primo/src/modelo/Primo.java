@@ -14,17 +14,17 @@ public class Primo
 
     private void Executar()
     {
-        this.resposta = "É primo!";
+        this.resposta = "É primo";
         if (num <= 1)
         {
-            this.resposta = "Não é primo!";
+            this.resposta = "Não é primo";
             return;
         }
-        for (int i = 2; i <= this.num / 2 + i; i++)
+        for (int i = 2; i <= this.num / 2 + 1; i++)
         {
             if (num % i == 0)
             {
-                this.resposta = "Não é primo!";
+                this.resposta = "Não é primo";
                 break;
             }
         }

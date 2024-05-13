@@ -1,0 +1,451 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --cor0: #fff;
+    --cor1: #024959;
+    --cor2: #AEF2CC;
+    --cor3: #D0F2D5;
+    --cor4: #A4D932;
+    --cor5: #F2F2F2;
+    --cor6: #000;
+    --cor7: #D9D9D9;
+    --cor8: #F5F5DC;
+
+}
+
+/* gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* gerais */
+
+/* Menu */
+.img-logo {
+    width: 300px;
+}
+
+header {
+    width: 98vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.menu-nav>ul {
+    display: flex;
+    gap: 15px;
+    color: var(--cor6)
+}
+
+.menu-nav>ul>li {
+    background-color: var(--cor2);
+    border-radius: 20px;
+    padding: 5px;
+    border: solid 2px var(--cor0);
+    list-style: none;
+}
+
+.menu-nav>ul>li:hover {
+    border: solid 2px var(--cor2);
+    background-color: var(--cor5);
+    cursor: pointer;
+}
+
+#burguer {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: none;
+    background-color: var(--cor0);
+}
+
+.menu-nav>ul>li>a {
+    color: var(--cor6);
+    padding: 8px;
+}
+
+/*Fim Menu */
+
+/* MENU RESPONSIVO */
+
+#menuResponsivo {
+    display: none;
+}
+
+.nav-responsivo {
+    background-color: var(--cor2);
+    padding: 10px;
+}
+
+.nav-responsivo li {
+    list-style: none;
+    padding: 10px;
+    width: 100vw;
+    text-align: center;
+}
+
+.nav-responsivo li:hover {
+    background-color: white;
+    transition: all .2s;
+}
+
+.nav-responsivo a {
+    color: var(--cor1);
+    font-weight: bold;
+    width: 100vw;
+}
+
+/* FIM RESPONSIVO MENU */
+
+/*Principal */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.box-texto {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    gap: 10px;
+}
+
+.container h1 {
+    color: var(--cor1);
+    font-size: 2em;
+}
+
+.box-texto>a {
+    color: var(--cor6);
+    width: 150px;
+    border-radius: 20px;
+    border: solid 2px var(--cor2);
+    padding: 8px;
+    text-align: center;
+}
+
+.box-texto>a:hover {
+    background-color: var(--cor5);
+}
+
+.img-inicio {
+    margin: auto;
+    width: 100%;
+}
+
+/*Fim Principal */
+
+
+/* Sobre */
+
+.img-sobre {
+    width: 100%;
+    z-index: 2;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    height: 100%;
+    margin: auto;
+    background-color: var(--cor7);
+    padding: 20px;
+    border-radius: 20px;
+    gap: 80px;
+    z-index: 1;
+    position: relative;
+    bottom: 200px;
+}
+
+.txt-sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.txt-sobre>h1 {
+    color: var(--cor1);
+}
+
+.bike-integra {
+    width: 350px;
+    height: 250px;
+    border-radius: 12px;
+}
+
+/* Fim Sobre */
+
+/* Beneficios */
+
+#beneficios {
+    width: 95vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+    background-color: var(--cor3);
+    border-radius: 20px;
+    padding: 60px;
+    margin-bottom: 5%;
+}
+
+.container-beneficios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: auto;
+}
+
+#beneficios>h1 {
+    text-align: center;
+    color: var(--cor1);
+}
+
+.card-beneficios {
+    background-color: var(--cor0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 250px;
+}
+
+.card-beneficios>p {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.icones-beneficios {
+    width: 60px;
+}
+
+/* Fim Beneficios */
+
+/* Saude e meio ambiente */
+#section-saude {
+    display: flex;
+    width: 95vw;
+    height: 90vh;
+    margin: auto;
+    background-color: var(--cor2);
+    margin-bottom: 5%;
+    border-radius: 20px;
+}
+
+.saude-meio-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px;
+    text-align: justify;
+}
+
+.saude-meio-texto p {
+    text-indent: 30px;
+}
+
+.img-saude-meio {
+    height: 90vh;
+    border-radius: 20px;
+    box-shadow: -3px 0 3px rgba(0, 0, 0, 0.25);
+}
+
+/* fim Saude e meio ambiente */
+
+/* Desenvolvimento Sustentavel */
+#section-desenvolvimento {
+    display: flex;
+    width: 95vw;
+    height: 65vh;
+    margin: auto;
+    background-color: var(--cor2);
+    margin-bottom: 5%;
+    border-radius: 20px;
+}
+
+.desenvolvimento-sustentavel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px;
+    text-align: justify;
+}
+
+.desenvolvimento-sustentavel p {
+    text-indent: 30px;
+}
+
+.img-desenvolvimento-sustentavel {
+    border-radius: 20px;
+    height: 100%;
+    box-shadow: -3px 0 3px rgba(0, 0, 0, 0.25);
+}
+
+/* Fim desenvolvimento*/
+
+/* Impacto */
+#section-impacto {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 95vw;
+    height: 65vh;
+    margin: auto;
+    background-color: var(--cor2);
+    margin-bottom: 5%;
+    border-radius: 20px;
+}
+
+.impacto-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--cor2);
+    width: 100vw;
+    height: 49.5vh;
+    margin: auto;
+    margin-bottom: 5%;
+    width: 95vw;
+    padding: 0;
+    border-radius: 0 20px 20px 0;
+}
+
+#impacto-list li {
+    margin-bottom: 6px;
+    width: 30vw;
+    margin: auto;
+    padding: 0;
+    justify-content: start;
+}
+
+.img-impacto {
+    height: 65vh;
+    border-radius: 20px;
+}
+
+/*Fim Impacto */
+
+/* Cadastro */
+#cadastro {
+    width: 95vw;
+    margin-bottom: 10%;
+}
+
+.evelope-passos {
+    background-color: var(--cor7);
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    padding: 25px;
+}
+
+.conteiner-passos-cadastro>h1 {
+    text-align: center;
+    color: var(--cor1);
+    padding: 25px;
+}
+
+.container-passos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    height: 100%;
+    gap: 10px;
+}
+
+.passos-cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--cor0);
+    height: 75%;
+    border-radius: 20px;
+}
+
+.passos-cadastro>p {
+    text-align: center;
+    font-weight: 600;
+    color: var(--cor1);
+}
+
+.icon-cadastro {
+    width: 60px;
+}
+
+.svg-login {
+    width: 250px;
+    margin: auto;
+}
+
+/* Fim Cadastro */
+
+/* Footer */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--cor7);
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    margin-top: 10%;
+}
+
+.logos-oficias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape-right .icon-instagram {
+    color: #d6249f;
+}
+
+.rodape-right .icon-facebook {
+    color: #285AEB;
+}
+
+.logo-oficial {
+    width: 100px;
+}
+
+/* Fim Footer */
