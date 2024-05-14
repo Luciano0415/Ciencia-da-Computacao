@@ -10,7 +10,11 @@ import modelo.Estaticos;
 
 /**
  *
+<<<<<<< HEAD
+ * @author Gabriel Lima
+=======
  * @author Rever
+>>>>>>> 52c9c1fd75e77b51432e917b94f6bf6798054475
  */
 public class frmPrincipal extends javax.swing.JDialog
 {
@@ -34,13 +38,24 @@ public class frmPrincipal extends javax.swing.JDialog
     private void initComponents()
     {
 
+<<<<<<< HEAD
+        lblResposta = new javax.swing.JLabel();
+        btnCalcular = new javax.swing.JButton();
+        txfNumero = new javax.swing.JTextField();
+=======
         txfNumero = new javax.swing.JTextField();
         btnCalcular = new javax.swing.JButton();
         lblResposta = new javax.swing.JLabel();
+>>>>>>> 52c9c1fd75e77b51432e917b94f6bf6798054475
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Fatorial");
 
+<<<<<<< HEAD
+        lblResposta.setText("resultado");
+
+=======
+>>>>>>> 52c9c1fd75e77b51432e917b94f6bf6798054475
         btnCalcular.setText("Calcular Fatorial");
         btnCalcular.addActionListener(new java.awt.event.ActionListener()
         {
@@ -50,13 +65,35 @@ public class frmPrincipal extends javax.swing.JDialog
             }
         });
 
+<<<<<<< HEAD
+        txfNumero.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                txfNumeroActionPerformed(evt);
+            }
+        });
+=======
         lblResposta.setText("Resultado");
+>>>>>>> 52c9c1fd75e77b51432e917b94f6bf6798054475
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblResposta, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(txfNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 31, Short.MAX_VALUE))
+=======
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblResposta)
@@ -64,23 +101,40 @@ public class frmPrincipal extends javax.swing.JDialog
                         .addComponent(txfNumero)
                         .addComponent(btnCalcular, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)))
                 .addContainerGap(30, Short.MAX_VALUE))
+>>>>>>> 52c9c1fd75e77b51432e917b94f6bf6798054475
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
+                .addGap(22, 22, 22)
+=======
                 .addGap(50, 50, 50)
+>>>>>>> 52c9c1fd75e77b51432e917b94f6bf6798054475
                 .addComponent(txfNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnCalcular)
                 .addGap(18, 18, 18)
                 .addComponent(lblResposta)
+<<<<<<< HEAD
+                .addContainerGap(28, Short.MAX_VALUE))
+=======
                 .addContainerGap(30, Short.MAX_VALUE))
+>>>>>>> 52c9c1fd75e77b51432e917b94f6bf6798054475
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< HEAD
+    private void txfNumeroActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_txfNumeroActionPerformed
+    {//GEN-HEADEREND:event_txfNumeroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txfNumeroActionPerformed
+
+=======
+>>>>>>> 52c9c1fd75e77b51432e917b94f6bf6798054475
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnCalcularActionPerformed
     {//GEN-HEADEREND:event_btnCalcularActionPerformed
         Controle controle = new Controle(txfNumero.getText());
@@ -110,6 +164,18 @@ public class frmPrincipal extends javax.swing.JDialog
                     break;
                 }
             }
+<<<<<<< HEAD
+        } catch (ClassNotFoundException ex)
+        {
+            java.util.logging.Logger.getLogger(frmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex)
+        {
+            java.util.logging.Logger.getLogger(frmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex)
+        {
+            java.util.logging.Logger.getLogger(frmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex)
+=======
         }
         catch (ClassNotFoundException ex)
         {
@@ -124,6 +190,7 @@ public class frmPrincipal extends javax.swing.JDialog
             java.util.logging.Logger.getLogger(frmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         catch (javax.swing.UnsupportedLookAndFeelException ex)
+>>>>>>> 52c9c1fd75e77b51432e917b94f6bf6798054475
         {
             java.util.logging.Logger.getLogger(frmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
