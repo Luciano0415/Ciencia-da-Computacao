@@ -4,19 +4,16 @@
  */
 package exerciciotemperaturacf;
 
-/**
- *
- * @author Gabriel Lima
- */
+import apresentacao.frmPrincipal;
+
+
 public class ExercicioTemperaturaCF
 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args)
     {
-        // TODO code application logic here
+       frmPrincipal frmP = new frmPrincipal(null, true);
+       frmP.setVisible(true);
     }
     
 }
