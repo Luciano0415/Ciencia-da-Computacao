@@ -3,7 +3,11 @@
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
+<<<<<<< HEAD:3 semestre/Ling. Programação a Orientação Objeto/ExTemperaturaK/nbproject/project.xml
             <name>Temperatura</name>
+=======
+            <name>ExercicioTemperaturaCF</name>
+>>>>>>> 6c236bdb675c180573a2b71ed8a5b5ea479d9a4a:3 semestre/Ling. Programação a Orientação Objeto/exercicioTemperaturaCF/nbproject/project.xml
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>
