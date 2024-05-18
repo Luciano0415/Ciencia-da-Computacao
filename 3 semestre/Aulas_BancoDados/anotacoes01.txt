@@ -1,0 +1,89 @@
+create database empresa
+go
+use empresa
+go
+
+--------------------------------------------------
+
+create table pessoas
+(
+	idPessoa int primary key identity(1,1),
+	nome varchar(50),
+	rg varchar(10),
+	cpf varchar(12)
+)
+go
+
+--------------------------------------------------
+
+select * from pessoas
+
+--------------------------------------------------
+
+select * from pessoas
+
+insert into pessoas(nome, rg, cpf)
+values
+('gabriel', '21212121', '120120120'),
+(outro nome, outro rg, outro cpf)
+
+--------------------------------------------------
+
+select * from pessoas
+order by nome desc / order by nome asc
+
+--------------------------------------------------
+
+select * from pessoas
+order by nome, rg
+
+--------------------------------------------------
+
+select * from pessoas
+where nome = 'gabriel'
+
+where nome = 'gabriel'
+order by rg
+
+where nome = like '_a%' / where nome = like '__a%'
+
+where rg like '%20'
+where nome like 'ga%'
+
+--------------------------------------------------
+
+select nome, rg from pessoas
+
+select UPPER(nome) rg from pessoas
+
+select DISTINTCT(nome) rg from pessoas --> DISTINCT não faz repetir valores
+
+--------------------------------------------------
+
+drop pessoas --> remove tabela
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

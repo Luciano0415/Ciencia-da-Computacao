@@ -1,0 +1,99 @@
+----------------------------------------------------------------------------
+select * from produtos
+
+**normalização é para remover tudo aquilo que é reperido**
+
+create table Lojas
+(
+	idLoja int identity(1, 1) primary key,
+	numLoja varchar(2),
+	endereco varchar(30),
+	numero varchar(5)
+)
+go
+
+create table Vendedores
+(
+	idVendedor int identity(1, 1) primary key,
+	nome varchar(30),
+	fk_idLoja int
+)
+go
+
+create table Veiculos
+(
+	idVeiculo int identity(1, 1) primary key,
+	tipo varchar(20),
+	fabricante varchar(30),
+	modelo varchar(30),
+	ano_fab int,
+	cor varchar(20),
+	valor_ent float,
+	valor_saida float,
+	data_ent date,
+	data_saida date,
+	fk_idLoja int,
+	fk_idVendedor int
+)
+go
+
+alter table Vendedores
+add constraint idLoja_fk_idVendedor
+foreign key(fk_idLoja)
+references Lojas(idLoja)
+
+alter table Veiculos
+add constraint idLoja_fk_idVeiculos 
+foreign key(fk_idLoja)
+references Lojas(idLoja)
+
+alter table Veiculos
+add constraint idVeiculo_fk_idVendedor
+foreign key(fk_idVendedor)
+references Vendedores(idVendedor)
+
+-----------------------------------------------------------------------------
+
+insert into lojas
+select distinct(loja), endereco, numero from produtos
+
+-----------------------------------------------------------------------------
+
+select * from produtos
+select * from Lojas
+
+-----------------------------------------------------------------------------
+
+select distinct(vendedor), idLoja from produtos 
+join lojas
+on produtos.loja = lojas.numLoja
+
+select * from vendedores
+
+-----------------------------------------------------------------------------
+
+insert into veiculos
+select tipo, fabricante, modelo, ano_fab, cor, valor_ent, valor_saida,
+data_ent, data_saida, idLoja, idVendedor
+from
+(
+	select * from produtos
+	join vendedores
+	on produtos.vendedor = vendedor.nome
+	) as a
+join
+(select numLoja, idLoja from lojas) as b
+on a.loja = b.idLoja
+
+-----------------------------------------------------------------------------
+
+select * from produtos
+select * from lojas
+select * from vendedores
+select * from veiculos
+
+
+
+
+
+
